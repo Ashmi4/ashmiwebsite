@@ -1,6 +1,8 @@
 const express = require('express');
 const people = require('./people.json');
 const app = express();
+
+var port = process.env.PORT || 3000;
 // ...
 app.set('view engine', 'pug');
 
@@ -54,4 +56,5 @@ app.get('/contact', (req, res) => {
 /*const server = app.listen(7000, () => {
   console.log(`Express running → PORT ${server.address().port}`);
 });*/
-const server = app.listen(port, () => console.log('Server is running on port'+port));
+
+app.listen(port, () => console.log('Server is running on port'+port));
