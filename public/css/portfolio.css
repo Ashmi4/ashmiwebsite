@@ -1,0 +1,118 @@
+/*
+----------------------------------
+
+        Name: portfolio.css
+        Version: 1.2
+
+----------------------------------
+
+        Table of Contents
+        
+        #General style
+        #Grid
+        #Slideshow
+        #Navigation
+
+*/
+
+/* ==========================================================================
+   #General style
+   ========================================================================== */
+.grid-gallery { height:2600px}
+.grid-gallery ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.grid-gallery figure {
+    margin: 0;
+}
+.grid-gallery figure img {
+    display: block;
+    width: 100%;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.grid-gallery figcaption h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    padding: 0 0 10px 0;
+}
+.grid-gallery figcaption span {
+    border-bottom: 3px solid #ffb400;
+    color: #000;
+    display: block;
+    font-size: 12px;
+    margin: 0 0 25px;
+    padding: 0 0 15px;
+    text-transform: uppercase;
+}
+/* ==========================================================================
+   #Grid
+   ========================================================================== */
+
+.grid-wrap {
+}
+.grid {
+    margin: 0 auto;
+}
+.grid li {
+    width: 100%;
+    float: left;
+    cursor: pointer;
+    margin: 0 0 70px 0;
+    position: relative !important;
+    top: inherit !important;
+}
+.grid figure {
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+.grid li:hover figure {
+    opacity: 1;
+	
+}
+.grid figcaption {
+    background-color: #ffb400;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+.grid li:hover figcaption {
+    opacity: 1;
+    transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+	
+}
+.figcaption-details {
+    position: absolute;
+    top: 32%;
+    width: 100%;
+    text-align: center;
+}
+.figcaption-details img {
+    width: 82px !important;
+    height: 82px !important;
+    display: inline !important;
+    margin: 0 0 30px
+}

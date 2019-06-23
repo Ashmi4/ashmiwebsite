@@ -11,8 +11,7 @@ app.use(express.static(__dirname + '/public'));
 // ...
 app.get('/', (req, res) => {
   res.render('index', {
-  title: 'Homepage',
-  people: people.profiles
+  title: 'Homepage'
 });
 });
 app.get('/about', (req, res) => {
