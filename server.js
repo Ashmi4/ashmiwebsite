@@ -2,6 +2,7 @@ const express = require('express');
 const people = require('./people.json');
 const app = express();
 // ...
+var port = process.env.PORT || 3000;
 app.set('view engine', 'pug');
 
 // serve static files from the `public` folder
@@ -13,5 +14,4 @@ app.get('/', (req, res) => {
 });
 });
 
-
-const server = app.listen(app.get('port'));
+app.listen(port, () => console.log('Server is running on port'+port));
