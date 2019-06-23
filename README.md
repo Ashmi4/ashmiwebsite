@@ -1,3 +1,3 @@
-# Ashmi's website
+# myweb
 
-# I am refer https://www.lynda.com/ for my website.
+# I am using initial files from github: https://github.com/ayoisaiah/node-website-starter-files
